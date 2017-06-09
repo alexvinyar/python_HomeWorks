@@ -2,11 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/style.css">
+    <div id="header">
     <title>Алексей Виняр</title>
-    <style>
-        .pos {vertical-align: sub; color: blue; font-size: 70%;}
-        .result {font-size: 24px;}
-    </style>
+    </div>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart'], 'language': 'ru'});
@@ -33,18 +32,22 @@
 
 </head>
 <body>
+<div id="body">
     <form action="verb_page" method='post'>
+        <div id="header">
         <h1>Ваш текст:</h1>
+        </div>
+        <div id="content">
         <textarea rows="4" cols="50" name="text">{{ input }}</textarea>
         <br>
         <input type="submit" value="Разобрать">
+        </div>
     </form>
-
     {% if text %}
     <div id="chart_div"></div>
             <h1>Разбор:</h1>
             <p class="result"> {{ text | safe}}</p>
     {% endif %}
-
+</div>
 </body>
 </html>

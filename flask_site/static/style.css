@@ -1,0 +1,28 @@
+   #body {
+	   background: #FFC0CB;
+	   height: 100%;
+	   font: 12pt sans-serif;
+	   margin: 0
+   }
+   #header {
+	   background: #DB7093;
+	   color: #FFE4E1;
+	   font: 15pt sans-serif;
+	   line-height: 20%;
+	   padding: 8px
+   }
+
+   #content {
+       background: #FFE4E1;
+	   font: 12pt sans-serif;
+	   line-height: 100%;
+   }
+
+   A:link {
+        text-decoration: none;
+   	    color: grey
+   }
+
+   A:visited {
+       color: grey
+   }
